@@ -1,0 +1,5 @@
+/.vscode
+/bin
+/log
+/Sudoku_solver
+*.exe
