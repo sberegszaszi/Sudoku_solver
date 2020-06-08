@@ -8,14 +8,14 @@ using namespace std::literals::string_literals;
 
 bool solveWithRecursion{false};
 std::string inFileName{"data/sample1.txt"};
-Timer t{};
-Logger logFile{"log/sudoku_solver_" + t.YYYYMMDD_HHMMSS() + ".log"};
 
 void HandleInputArguments(const int argc, char* argv[]);
 
 int main(int argc, char* argv[])
 {
 	try{
+		Timer t{};
+		Logger logFile{"log/sudoku_solver_" + t.YYYYMMDD_HHMMSS() + ".log"};
 		HandleInputArguments(argc, argv);
 
 		#ifdef _WIN32
